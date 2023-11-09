@@ -1,0 +1,39 @@
+html,
+body,
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+:root {
+  --white:#f6f3ed;
+  --lightgray: #f6f3ee
+  --dark: #2f2f3b;
+  --darkblue: #2f2f4e;
+
+  --h1: 7.594rem;
+  --h2: 5.063rem;
+
+}
+.light{
+  --primary: var(--white);
+  --secondary: var(--lightgray);
+}
+.dark{
+  --primary: var(--dark);
+  --secondary: var(--darkblue);
+}
+body{
+  background-color: var(--primary);
+}
+h1{
+  font-size: var(--h1);
+}
+.section-title{
+  font-size: var(--h1);
+}
+
+/* make array of items
+toggles that change content on pg */

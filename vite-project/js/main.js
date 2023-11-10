@@ -10,5 +10,3 @@ document.querySelector(".change").addEventListener("click", function(){
     document.body.classList.remove("dark")
   }
 });
-
-setupCounter(document.querySelector('#counter'))

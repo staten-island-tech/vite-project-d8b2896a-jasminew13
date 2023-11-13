@@ -13,10 +13,13 @@ body,
   --dark: #2f2f3b;
   --darkblue: #2f2f4e;
 
+  --primary: var(--dark);
+  --secondary: var(--darkblue);
   --h1: 7.594rem;
   --h2: 5.063rem;
-  --primary: var(--white);
-  --secondary: var(--lightgray);
+  --h3: 3.375rem;
+  --h4: 2.25rem;
+  --h5: 1.5rem;
 }
 .light{
   background-color: var(--white);
@@ -28,29 +31,38 @@ body,
   --primary: var(--dark);
   --secondary: var(--darkblue);
 }
-
+.lol{
+  background-color: var(--primary);
+}
+.app{
+  background-color: var(--secondary);
+}
 h1{
   font-size: var(--h1);
-}
-.section-title{
-  font-size: var(--h1);
+  text-align: center;
 }
 h2{
   font-size: var(--h2);
 }
 /* make array of items
 toggles that change content on pg */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+}
 .btn,
 .btn:link,
 .btn:visited {
-  text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
   display: inline-block;
   margin: 1rem auto;
   font-size: 2rem;
   border: none;
-  border-radius: 10rem;
+  border-radius: 5rem;
   transition: all 0.2s;
 }
 .btn:hover {

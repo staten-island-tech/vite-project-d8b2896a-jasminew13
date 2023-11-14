@@ -1,0 +1,5 @@
+const lightthings = {
+    name: "sun",
+    
+
+}

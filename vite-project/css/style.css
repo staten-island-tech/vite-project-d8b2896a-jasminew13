@@ -25,14 +25,17 @@ body,
   background-color: var(--white);
   --primary: var(--white);
   --secondary: var(--lightgray);
+  color: var(--dark);
 }
 .dark{
   background-color: var(--dark);
   --primary: var(--dark);
   --secondary: var(--darkblue);
+  color: var(--white);
 }
 .lol{
   background-color: var(--primary);
+
 }
 .app{
   background-color: var(--secondary);

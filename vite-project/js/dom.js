@@ -1,5 +1,0 @@
-const lightthings = {
-    name: "sun",
-    
-
-}

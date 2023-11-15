@@ -5,6 +5,7 @@ body,
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
+  background-color: #2f2f4e;
 }
 
 :root {
@@ -20,18 +21,6 @@ body,
   --h3: 3.375rem;
   --h4: 2.25rem;
   --h5: 1.5rem;
-}
-.light{
-  background-color: var(--white);
-  --primary: var(--white);
-  --secondary: var(--lightgray);
-  color: var(--dark);
-}
-.dark{
-  background-color: var(--dark);
-  --primary: var(--dark);
-  --secondary: var(--darkblue);
-  color: var(--white);
 }
 .lol{
   background-color: var(--primary);
@@ -55,20 +44,4 @@ h3,
 h4,
 h5 {
   text-align: center;
-}
-.btn,
-.btn:link,
-.btn:visited {
-  text-decoration: none;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  margin: 1rem auto;
-  font-size: 2rem;
-  border: none;
-  border-radius: 5rem;
-  transition: all 0.2s;
-}
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
 }

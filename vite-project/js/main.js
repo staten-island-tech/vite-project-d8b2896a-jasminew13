@@ -1,5 +1,7 @@
-import {lightthings} from './albums'
-import '../css/style.css'
+import {popalbums} from '../js/albums'
+import {indiepop} from '../js/albums'
+export {rnb} from '../js/albums'
+import '../css/album.css'
 
 // document.querySelector(".btn").addEventListener("click", function(){
 //   if(document.body.classList.contains("dark")){
@@ -10,5 +12,6 @@ import '../css/style.css'
 //     document.body.classList.remove("dark")
 //   }
 // });
-
-console.log(lightthings);
+document.querySelector('body').onclick = (e) => {
+  console.log(popalbums)
+}

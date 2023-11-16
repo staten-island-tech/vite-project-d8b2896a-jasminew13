@@ -5,7 +5,7 @@ body,
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
-  background-color: #2f2f4e;
+  background-color: #ffffff;
 }
 
 :root {
@@ -14,8 +14,8 @@ body,
   --dark: #2f2f3b;
   --darkblue: #2f2f4e;
 
-  --primary: var(--dark);
-  --secondary: var(--darkblue);
+  --primary: var(--white);
+  --bg: var(--lightgray);
   --h1: 7.594rem;
   --h2: 5.063rem;
   --h3: 3.375rem;
@@ -27,7 +27,7 @@ body,
 
 }
 .app{
-  background-color: var(--secondary);
+  background-color: var(--bg);
 }
 h1{
   font-size: var(--h1);
@@ -44,4 +44,12 @@ h3,
 h4,
 h5 {
   text-align: center;
+}
+.artist{
+  font-size: var(--h2);
+}
+#btn{
+  font-size: var(--h3);
+  margin-left: 2rem;
+  align-items: center;
 }

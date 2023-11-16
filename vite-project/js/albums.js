@@ -1,5 +1,6 @@
 export {popalbums};
 export {indiepop};
+export {rnb};
 const popalbums = [
 {
  name:"1989 taylor's version",

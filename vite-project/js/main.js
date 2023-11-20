@@ -1,6 +1,4 @@
-import {popalbums} from '../js/albums'
-import {indiepop} from '../js/albums'
-export {rnb} from '../js/albums'
+import {albums} from '../js/albums'
 import '../css/album.css'
 
 // document.querySelector(".btn").addEventListener("click", function(){
@@ -12,6 +10,7 @@ import '../css/album.css'
 //     document.body.classList.remove("dark")
 //   }
 // });
-document.querySelector('body').onclick = (e) => {
-  console.log(popalbums)
-}
+// document.querySelector('body').onclick = (e) => {
+//   console.log(albums)
+// }
+console.log(albums);

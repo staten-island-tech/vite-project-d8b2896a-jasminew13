@@ -29,6 +29,25 @@ body,
 .app{
   background-color: var(--bg);
 }
+.card{
+  height: 40vh;
+  width: 20vw;
+  background-color: #e6d5db;
+  border-radius: 2rem;
+  box-shadow: 10px 10px 5px #69575e;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 70%;
+}
+   .card-img{
+   width: 80%;
+   height: 50%;
+}
+.artistname{
+  font-size: var(--h4);
+}
 h1{
   font-size: var(--h1);
   text-align: center;

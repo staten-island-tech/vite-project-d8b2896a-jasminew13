@@ -5,31 +5,39 @@ body,
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
-  background-color: #ffffff;
 }
 
 :root {
   --white:#f6f3ed;
-  --lightgray: #f6f3ee
-  --dark: #2f2f3b;
+  --beige: #f6f3ee
+  --dark: #144d91;
   --darkblue: #2f2f4e;
 
-  --primary: var(--white);
-  --bg: var(--lightgray);
+  --primary: var(--dark);
+  --secondary: var(--darkblue);
   --h1: 7.594rem;
   --h2: 5.063rem;
   --h3: 3.375rem;
   --h4: 2.25rem;
   --h5: 1.5rem;
 }
+.dark{
+  --primary: var(--dark);
+  --secondary: var(--darkblue)
+}
+.light{
+  --primary: var(--white);
+  --secondary: var(--beige)
+}
+  
 .lol{
   background-color: var(--primary);
-
 }
 .app{
-  background-color: var(--bg);
+  background-color: var(--secondary);
+  font-size: var(--h3);
 }
-.card{
+/* .card{
   height: 40vh;
   width: 20vw;
   background-color: #e6d5db;
@@ -47,7 +55,7 @@ body,
 }
 .artistname{
   font-size: var(--h4);
-}
+} */
 h1{
   font-size: var(--h1);
   text-align: center;

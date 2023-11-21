@@ -6,12 +6,14 @@ const albums = [
  artist: "taylor swift",
  price: "$12.89",
  genre: "pop",
+ image: "/1989ts.jpg",
 },
 {
  name: "reputation",
  artist: "taylor swift",
  price: "$17.90",
  genre: "pop",
+ image: "/reprep.jpg",
 },
 {
  name: "superache",
@@ -20,10 +22,10 @@ const albums = [
  genre: "pop",
    },
    {
-    name: "SAWAYAMA",
-    artist: "rina sawayama",
-    price: "n/a",
-    genre: "indie pop",
+ name: "SAWAYAMA",
+ artist: "rina sawayama",
+ price: "n/a",
+ genre: "indie pop",
       },
 
  {

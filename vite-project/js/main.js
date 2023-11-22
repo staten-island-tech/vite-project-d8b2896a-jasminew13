@@ -10,17 +10,15 @@ import '../css/album.css'
     document.body.classList.remove("light")
    }
  });
- document.querySelector(".pop").addEventListener("click", function(){
+/*  document.querySelector(".pop").addEventListener("click", function(){
     if(document.body.classList.contains("indiepop","rnb")){
       document.body.classList.add("pop");
        document.body.classList.remove("indiepop","rnb");
      } else{
       document.body.classList.remove("pop");
      }
-   });
-/*  document.querySelector('body').onclick = (e) => {
-   document.forEach(e => {
-    console.log(albums)
-   });
- }  */
- console.log(albums)
+   }); */
+
+   const results = albums.filter((album) => album.genre == "pop");
+   console.log(results);
+

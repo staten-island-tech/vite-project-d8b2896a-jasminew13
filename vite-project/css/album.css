@@ -37,7 +37,7 @@ body,
   background-color: var(--secondary);
   font-size: var(--h3);
 }
-/* .card{
+ .card{
   height: 40vh;
   width: 20vw;
   background-color: #e6d5db;
@@ -53,9 +53,10 @@ body,
    width: 80%;
    height: 50%;
 }
-.artistname{
+.artistname,
+.artist{
   font-size: var(--h4);
-} */
+} 
 h1{
   font-size: var(--h1);
   text-align: center;
@@ -71,9 +72,6 @@ h3,
 h4,
 h5 {
   text-align: center;
-}
-.artist{
-  font-size: var(--h2);
 }
 #btn{
   font-size: var(--h3);

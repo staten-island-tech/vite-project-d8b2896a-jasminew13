@@ -4,5 +4,9 @@ const DOMselectors = {
     image: document.querySelector(".image"),
     gallery: document.querySelector(".card"),
     price: document.querySelector(".button"),
+ 
 }; 
-export {DOMselectors}
+export {DOMselectors}   
+//pop: document.querySelector(".pop"),
+    //indiepop: document.querySelector("indiepop"),
+   // rnb: document.querySelector("rnb"),

@@ -1,6 +1,6 @@
 import {albums} from '../js/albums'
 import '../css/album.css'
-import { DOMselectors} from '../js/dom'
+import {DOMselectors} from '../js/dom'
 
  document.querySelector(".button").addEventListener("click", function(){
   if(document.body.classList.contains("dark")){
@@ -12,24 +12,28 @@ import { DOMselectors} from '../js/dom'
    }
  });
 
- DOMselectors.form.addEventListener('submit', function (ok) {
-  ok.preventDefault();
-  console.log(DOMselectors.image.value, DOMselectors.artistname.value, DOMselectors.albumname.value)
+ /* DOMselectors.form.addEventListener('submit', function (ok) {
+  ok.preventDefault(); */
+ console.log(DOMselectors)
+  function addcards (arr){
+    DOMselectors.forEach(albums =>(
+      DOMselectors.container.insertAdjacentHTML("afterend", `
+      <div class="container"><div class="card">
+  <img class="card-img" src= ${DOMselectors.image.value}></img>
+  <p class="albumname">${DOMselectors.albumname.value}</p>
+  <p><h2 class="artist">${DOMselectors.artistname.value}</h2></p>
+  <p class="price">${DOMselectors.price.value}</p>
+  </div>)}</div>`
+  ) 
+    ))
+ };
+  
+addcards(albums);
  
-  function cards (){
-  DOMselectors.gallery.insertAdjacentHTML("afterend", `
-  <div class="card">
-  <img class="card-img" src= ${albums.image.value}></img>
-  <p class="albumname">${albums.albumname.value}</p>
-  <p><h2 class="artist">${albums.artistname.value}</h2></p>
-  <p class="price">${albums.price.value}</p>
-  </div>)}`);
-  }});
-cards()
-
-let buttons = document.querySelectorAll('button')
+let buttons = document.querySelectorAll('#btn')
 buttons.forEach((btn) => btn.addEventListener("click", function(){
   let type = btn.textContent.toLowerCase()
   let newArr = albums.filter((album) => album.genre == type)
+  clearfields();
   cards(newArr)
 }))

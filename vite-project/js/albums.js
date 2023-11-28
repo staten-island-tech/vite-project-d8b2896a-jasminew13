@@ -45,12 +45,12 @@ const albums = [
     name: "red moon in venus",
     artist: "kali uchis",
     price: "$14.00",
-    genre: ["r&b"],
+    genre: ["rnb"],
 },
 {
     name: "SOS",
     artist: "sza",
     price: "$10.99",
-    genre: ["r&b"],
+    genre: ["rnb"],
 },
 ]

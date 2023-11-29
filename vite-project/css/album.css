@@ -9,25 +9,25 @@ body,
 
 :root {
   --white:#f6f3ed;
-  --beige: #f6f3ee
-  --dark: #144d91;
+  --beige: #f3e7d4;
+  --dark: #5a6e86;
   --darkblue: #2f2f4e;
 
   --primary: var(--dark);
   --secondary: var(--darkblue);
   --h1: 7.594rem;
-  --h2: 5.063rem;
+  --h2: 4.063rem;
   --h3: 3.375rem;
-  --h4: 2.25rem;
+  --h4: 2.5rem;
   --h5: 1.5rem;
 }
 .dark{
   --primary: var(--dark);
-  --secondary: var(--darkblue)
+  --secondary: var(--darkblue);
 }
 .light{
   --primary: var(--white);
-  --secondary: var(--beige)
+  --secondary: var(--beige);
 }
   
 .lol{
@@ -35,39 +35,48 @@ body,
 }
 .app{
   background-color: var(--secondary);
-  font-size: var(--h3);
-}
-.container{
-  flex-wrap: wrap;
+  flex-direction: row;
   display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+} 
+.buttoncontainer {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+  background-color: var(--secondary);
 }
  .card{
-  height: 40vh;
-  width: 20vw;
-  background-color: #e6d5db;
+  height: 60vh;
+  width: 30vw;
+  background-color: #d6cdee;
   border-radius: 2rem;
-  box-shadow: 10px 10px 5px #69575e;
+  box-shadow: 10px 10px 5px #3a303f;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  flex-direction: row;
   font-size: 70%;
   margin: 1rem;
 }
-   .card-img{
-   width: 94%;
-   height: 62%;
+   .image{
+   width: 95%;
+   height: 60%;
 }
-.artistname,
-.artist{
-  font-size: var(--h4);
-} 
+
 h1{
   font-size: var(--h1);
   text-align: center;
 }
 h2{
   font-size: var(--h2);
+}
+h4{
+  font-size: var(--h4);
 }
 /* make array of items
 toggles that change content on pg */
@@ -78,7 +87,8 @@ h4,
 h5 {
   text-align: center;
 }
-#btn{
+.pop, .indiepop, .rnb, .theme
+{
   font-size: var(--h3);
   margin-left: 2rem;
   align-items: center;

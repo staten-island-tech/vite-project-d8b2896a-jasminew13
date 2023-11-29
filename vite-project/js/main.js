@@ -1,8 +1,11 @@
-import {albums} from '../js/albums'
+import { albums } from '../js/albums'
 import '../css/album.css'
-import {DOMselectors} from '../js/dom'
+import { DOMselectors } from '../js/dom'
 
- document.querySelector(".button").addEventListener("click", function(){
+function clearfields(){
+  DOMselectors.container.innerHTML="";
+}
+ document.querySelector(".theme").addEventListener("click", function(){
   if(document.body.classList.contains("dark")){
     document.body.classList.add("light");
      document.body.classList.remove("dark");
@@ -14,26 +17,28 @@ import {DOMselectors} from '../js/dom'
 
  /* DOMselectors.form.addEventListener('submit', function (ok) {
   ok.preventDefault(); */
- console.log(DOMselectors)
+ //console.log(DOMselectors)
   function addcards (arr){
-    DOMselectors.forEach(albums =>(
-      DOMselectors.container.insertAdjacentHTML("afterend", `
-      <div class="container"><div class="card">
-  <img class="card-img" src= ${DOMselectors.image.value}></img>
-  <p class="albumname">${DOMselectors.albumname.value}</p>
-  <p><h2 class="artist">${DOMselectors.artistname.value}</h2></p>
-  <p class="price">${DOMselectors.price.value}</p>
-  </div>)}</div>`
-  ) 
-    ))
- };
+    arr.forEach((s) => {
+      DOMselectors.container.insertAdjacentHTML("afterend", 
+      `<div class="card">
+      <h2 class="albumname"> ${s.name}</h2>
+      <h2 class="artistname"> ${s.artist}</h2>
+      <img src="${s.image}" alt="" class="image">
+      <h3 class="pricing">${s.price}</h3>
+  </div>`
+  )})};
   
 addcards(albums);
- 
-let buttons = document.querySelectorAll('#btn')
+
+let buttons = document.querySelectorAll(".pop, .indiepop, .rnb")
 buttons.forEach((btn) => btn.addEventListener("click", function(){
-  let type = btn.textContent.toLowerCase()
-  let newArr = albums.filter((album) => album.genre == type)
+  let type = btn.textContent
+  let newArr = albums.filter((album) => album.genre === type)
   clearfields();
-  cards(newArr)
+  addcards(newArr);
+  addcards(albums);
 }))
+/* DOMselectors.buttons.addEventListener("click", function(){
+  clearfields();
+}) */

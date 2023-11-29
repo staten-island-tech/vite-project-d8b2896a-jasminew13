@@ -13,8 +13,8 @@ import { DOMselectors } from '../js/dom'
  });
 
  /* DOMselectors.form.addEventListener('submit', function (ok) {
-  ok.preventDefault(); */
- //console.log(DOMselectors)
+  ok.preventDefault(); console.log(DOMselectors)*/
+ 
   function addcards (arr){
     arr.forEach((s) => {
       DOMselectors.container.insertAdjacentHTML("afterend", 
@@ -30,19 +30,19 @@ addcards(albums)
 
 function clearscreen(){
   const clear = document.querySelector(".container");
-  clear.innerHTML = ""
+  clear.container.innerHTML = ""
 };
 
-let buttons = document.querySelectorAll(".pop, .indiepop, .rnb")
+let buttons = document.querySelectorAll(".pop, .indiepop, .rnb");
 
 buttons.forEach((button) => button.addEventListener("click", function(){
   let type = button.textContent;
   let newarr = albums.filter((album) => album.genre === type);
   clearscreen();
   addcards(newarr);
-}))
+}));
 
 DOMselectors.container.addEventListener("click", function(){
   clearscreen();
   addcards(albums)
-})
+});

@@ -30,7 +30,7 @@ addcards(albums)
 
 function clearscreen(){
   const clear = document.querySelector(".container");
-  clear.container.innerHTML = ""
+  clear.container.innerHTML= "";
 };
 
 let buttons = document.querySelectorAll(".pop, .indiepop, .rnb");

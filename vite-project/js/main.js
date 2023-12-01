@@ -1,6 +1,17 @@
 import { albums } from '../js/albums'
 import '../css/album.css'
 import { DOMselectors } from '../js/dom'
+//import {lightthings} from './albums'
+/* import '../css/style.css'
+import {popalbums} from '../js/albums'
+import {indiepop} from '../js/albums'
+export {rnb} from '../js/albums'
+import '../css/album.css' */
+
+/* console.log(lightthings);
+document.querySelector('body').onclick = (e) => {
+  console.log(popalbums)
+} */
  /* DOMselectors.form.addEventListener('submit', function (ok) {
   ok.preventDefault(); console.log(DOMselectors)*/
  
@@ -20,11 +31,7 @@ addcards(albums)
 function clearscreen(){
   DOMselectors.container.innerHTML= "";
 };
-clearscreen()
- DOMselectors.container.addEventListener("click", function(){
-  clearscreen();
-  //addcards(albums)
-}); 
+
 let buttons = document.querySelectorAll(".pop, .indiepop, .rnb");
 
 buttons.forEach((button) => button.addEventListener("click", function(){
@@ -33,7 +40,10 @@ buttons.forEach((button) => button.addEventListener("click", function(){
   clearscreen();
   addcards(newArr);
 }));
-
+/*  DOMselectors.container.addEventListener("click", function(){
+  clearscreen();
+  //addcards(albums)
+});  */
 
 document.querySelector(".theme").addEventListener("click", function(){
   if(document.body.classList.contains("dark")){

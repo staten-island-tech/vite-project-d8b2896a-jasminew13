@@ -6,6 +6,7 @@ const DOMselectors = {
     price: document.querySelector(".button"),
     pop: document.querySelector(".pop"),
     indiepop: document.querySelector(".indiepop"),
-    rnb: document.querySelector(".rnb")
+    rnb: document.querySelector(".rnb"),
+    all: document.querySelector(".all"),
 }; 
 export {DOMselectors}   

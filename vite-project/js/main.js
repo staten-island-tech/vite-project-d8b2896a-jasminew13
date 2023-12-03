@@ -14,7 +14,10 @@ document.querySelector('body').onclick = (e) => {
 } */
  /* DOMselectors.form.addEventListener('submit', function (ok) {
   ok.preventDefault(); console.log(DOMselectors)*/
- 
+ function clearscreen(){
+  DOMselectors.container.innerHTML= ``;
+}
+
   function addcards (arr){
     arr.forEach((s) => {
       DOMselectors.container.insertAdjacentHTML("afterend", 
@@ -24,23 +27,20 @@ document.querySelector('body').onclick = (e) => {
       <img src="${s.image}" alt="" class="image">
       <h3 class="price">${s.price}</h3>
   </div>`
-  )})};
+  )})}
   
 addcards(albums)
-
-function clearscreen(){
-  DOMselectors.container.innerHTML= "";
-};
+clearscreen();
 
 let buttons = document.querySelectorAll(".pop, .indiepop, .rnb");
 
 buttons.forEach((button) => button.addEventListener("click", function(){
   let type = button.textContent;
   let newArr = albums.filter((album) => album.genre === type);
-  clearscreen();
   addcards(newArr);
+  clearscreen();
 }));
-/*  DOMselectors.container.addEventListener("click", function(){
+/*   DOMselectors.container.addEventListener("click", clear(){
   clearscreen();
   //addcards(albums)
 });  */

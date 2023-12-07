@@ -14,7 +14,30 @@ document.querySelector('body').onclick = (e) => {
 } */
  /* DOMselectors.form.addEventListener('submit', function (ok) {
   ok.preventDefault(); console.log(DOMselectors)*/
- function clearFields(){
+
+  DOMselectors.pop.addEventListener("submit", function (event) {
+    event.preventDefault(); 
+    console.log(DOMselectors.image.value,DOMselectors.name.value, DOMselectors.album.value)
+  const printpop = albums.filter((album) => album.genre === pop);
+printpop.forEach(pop => {
+  function cardcard (){
+        DOMselectors.container.insertAdjacentHTML("afterend", `
+        <div class="card">
+        <img class="card-img" src= ${DOMselectors.pop.image}>
+        <h2 class="displayalbumname">${DOMselectors.pop.album}</h2>
+        <h2 class="displayartist">${DOMselectors.pop}</h2>
+        </div>
+        `)}
+});
+      
+   cardcard()
+   clearfields()
+   });
+
+
+
+
+ /* function clearFields(){
   DOMselectors.container.innerHTML= "";
 }
 
@@ -39,7 +62,7 @@ buttons.forEach((button) => button.addEventListener("click", function(){
   let newArr = albums.filter((album) => album.genre === type);
   addcards(newArr);
   clearFields();
-}));
+})); */
 /*   DOMselectors.container.addEventListener("click", clear(){
   clearscreen();
   //addcards(albums)

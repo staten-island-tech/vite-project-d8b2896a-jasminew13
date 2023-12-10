@@ -59,4 +59,11 @@ const albums = [
     genre: "rnb",
     image: "/sos.jpg",
 },
+{
+    name: "GABRIEL",
+    artist: "keshi",
+    price: "$11.98",
+    genre: "rnb",
+    image: "/gabriel.webp",
+}
 ]
